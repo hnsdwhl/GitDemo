@@ -19,6 +19,10 @@
     // Do any additional setup after loading the view, typically from a nib.
     self.title = @"首页";
     self.view.backgroundColor = [UIColor whiteColor];
+    
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(100, 100, 100, 30)];
+    label.text = @"测试";
+    [self.view addSubview:label];
 }
 
 - (void)didReceiveMemoryWarning {

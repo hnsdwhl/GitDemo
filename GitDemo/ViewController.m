@@ -28,6 +28,8 @@
     btn.frame = CGRectMake(0, 0, 100, 35);
     [btn setTitle:@"测试" forState:UIControlStateNormal];
     [self.view addSubview:btn];
+    
+    NSLog(@"test");
 }
 
 - (void)didReceiveMemoryWarning {

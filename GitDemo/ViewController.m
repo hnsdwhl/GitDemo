@@ -23,6 +23,11 @@
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(100, 100, 100, 30)];
     label.text = @"测试";
     [self.view addSubview:label];
+
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn.frame = CGRectMake(0, 0, 100, 35);
+    [btn setTitle:@"测试" forState:UIControlStateNormal];
+    [self.view addSubview:btn];
 }
 
 - (void)didReceiveMemoryWarning {

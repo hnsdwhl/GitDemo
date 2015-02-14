@@ -30,6 +30,7 @@
     [self.view addSubview:btn];
     
     NSLog(@"test");
+    NSLog(@"viewDidLoad");
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -41,6 +42,12 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    NSLog(@"viewWillDisappear");
 }
 
 - (void)didReceiveMemoryWarning {
